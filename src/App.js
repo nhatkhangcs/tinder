@@ -1,26 +1,18 @@
-import logo from './logo.svg';
-import background from './components/BB_Sustainable Cities.jpg';
-import './App.css';
+import Home from './pages/Home'
+import Dashboard from './pages/Dashboard'
+import Onboarding from './pages/Onboarding'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={background} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>``
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>  
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path = "/" element = {<Home/>} />
+        <Route path = "/dashboard" element = {<Dashboard/>} />
+        <Route path = "/onboarding" element = {<Onboarding/>} />
+      </Routes>
+    </BrowserRouter>  
+  )
 }
 
 export default App;

@@ -1,6 +1,6 @@
 const Onboarding = () => {
     return (
-        <div></div>
+        <div>Onboarding</div>
     )
 }
 
