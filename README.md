@@ -7,3 +7,6 @@ Practice using `reactjs` and then created a **tinder** kind of application.
 a. With **client** folder, run `npm run start:frontend`
 b. With **server** folder, run `npm run start:backend`
 3. Enjoy!
+
+# Reference: 
+https://www.youtube.com/watch?v=Q70IMS-Qnjk
