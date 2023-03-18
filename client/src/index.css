@@ -99,36 +99,78 @@ nav .logo-container .logo {
 
 /*-----AuthModal------*/
 .auth-modal {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 360px;
     height: 600px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 10px;
     padding: 40px;
-}
-
-.auth-modal .close-icon {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  }
+  
+  .auth-modal .close-icon {
     float: right;
-}
-
-.auth-modal form {
+  }
+  
+  .auth-modal h2 {
+    font-size: 28px;
+    margin-top: 0;
+  }
+  
+  .auth-modal p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .auth-modal form {
     display: flex;
     flex-direction: column;
-}
-
-
-.auth-modal input[type=password],
-.auth-modal input[type=email] {
-    padding: 8px;
-    margin: 8px;
-    font-size: 17px;
-}
-
+    align-items: center;
+  }
+  
+  .auth-modal input[type="password"],
+  .auth-modal input[type="email"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 80%;
+  }
+  
+  .auth-modal .secondary-button {
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color .3s;
+    width: 50%;
+  }
+  
+  .auth-modal .secondary-button:hover {
+    background-color: #006699;
+  }
+  
+  .auth-modal a {
+    color: #0088cc;
+    text-decoration: none;
+  }
+  
+  .auth-modal .error-message {
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+  }
+  
 /*-----Obboarding------*/
 
 .onboarding {

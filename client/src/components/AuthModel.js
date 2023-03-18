@@ -8,7 +8,7 @@ const AuthModal = ({setShowModal, isSignUp}) => {
     const [password, setPassword] = useState(null)
     const [confirmPassword, setConfirmPassword] = useState(null)
     const [error, setError]  = useState(null)
-    const [cookies, setCookie, removeCookie] = useCookies(['user'])
+    const [setCookie] = useCookies(['user'])
 
     let navigate = useNavigate()
 
@@ -87,11 +87,7 @@ const AuthModal = ({setShowModal, isSignUp}) => {
 
                 <input className='secondary-button' type='submit'/>
                 <p>{error}</p>
-
             </form>
-            <hr/>
-
-            <h2>GET THE APP</h2>
         </div>
     )
 }

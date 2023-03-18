@@ -7,7 +7,7 @@ import axios from 'axios'
 const Dashboard = () => {
   const [user, setUser] = useState(null)
   const [lastDirection, setLastDirection] = useState()
-  const [cookies, setCookie, removeCookie] = useCookies(['user'])
+  const [cookies] = useCookies(['user'])
   const [genderedUsers, setGenderedUsers] = useState(null)
   const userId = cookies.UserId
 
