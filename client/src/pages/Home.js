@@ -5,8 +5,8 @@ import Nav from '../components/Nav'
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false)
-    const [isSignUp, setIsSignUp] = useState(false)
-    const [cookies, removeCookie] = useCookies(['user'])
+    const [isSignUp, setIsSignUp] = useState(true)
+    const [cookies, setCookie, removeCookie] = useCookies(['user'])
 
     const authToken = cookies.authToken
 
