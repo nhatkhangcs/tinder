@@ -32,7 +32,7 @@ const Home = () => {
                 showModal={showModal}
                 setIsSignUp={setIsSignUp} />
             <div className="home">
-                <h1 className='primary-title'>Swipe Right@</h1>
+                <h1 className='primary-title'>Swipe Right <br></br>For A Better Study</h1>
                 <button className="primary-button" onClick={handleClick}>
                     {authToken ? 'Signout' : 'Create Account'}
                 </button>

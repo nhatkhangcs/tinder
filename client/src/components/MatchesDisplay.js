@@ -6,7 +6,11 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
     const [matchedProfiles, setMatchedProfiles] = useState(null);
     const [cookies, setCookie, removeCookie] = useCookies(null);
 
-    const matchedUserIds = matches.map(({ user_id }) => user_id);
+    console.log('matches', matches)
+
+    const matchedUserIds = matches
+
+    console.log('matchedUserIds ', matchedUserIds)
 
     const userId = cookies.UserId;
 
@@ -26,14 +30,6 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
     }, [matches]);
 
     console.log('matchedProfiles ', matchedProfiles); 
-
-    // const filteredMatchedProfiles = matchedProfiles?.filter(
-    //     (matchedProfile) =>
-    //         matchedProfile.matches.filter((profile) => profile.user_id == userId)
-    //             .length > 0
-    // );
-
-    console.log('filteredMatchedProfiles ', filteredMatchedProfiles);
 
     return (
         <div className="matches-display">
