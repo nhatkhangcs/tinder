@@ -110,39 +110,39 @@ nav .logo-container .logo {
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
-  }
-  
-  .auth-modal .close-icon {
+}
+
+.auth-modal .close-icon {
     float: right;
-  }
-  
-  .auth-modal h2 {
+}
+
+.auth-modal h2 {
     font-size: 28px;
     margin-top: 0;
-  }
-  
-  .auth-modal p {
+}
+
+.auth-modal p {
     margin-top: 20px;
     text-align: center;
-  }
-  
-  .auth-modal form {
+}
+
+.auth-modal form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .auth-modal input[type="password"],
-  .auth-modal input[type="email"] {
+}
+
+.auth-modal input[type="password"],
+.auth-modal input[type="email"] {
     padding: 10px;
     margin: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 80%;
-  }
-  
-  .auth-modal .secondary-button {
+}
+
+.auth-modal .secondary-button {
     background-color: #0088cc;
     color: #fff;
     border: none;
@@ -154,27 +154,37 @@ nav .logo-container .logo {
     margin-top: 10px;
     transition: background-color .3s;
     width: 50%;
-  }
-  
-  .auth-modal .secondary-button:hover {
+}
+
+.auth-modal .secondary-button:hover {
     background-color: #006699;
-  }
-  
-  .auth-modal a {
+}
+
+.auth-modal a {
     color: #0088cc;
     text-decoration: none;
-  }
-  
-  .auth-modal .error-message {
+}
+
+.auth-modal .error-message {
     margin-top: 20px;
     text-align: center;
     color: red;
-  }
-  
+}
+
 /*-----Obboarding------*/
 
 .onboarding {
     border-top: solid 1px rgb(213, 213, 213);
+}
+
+.onboarding form {
+    display: flex;
+    justify-content: center;
+}
+
+.onboarding {
+    border-top: 1px solid #d5d5d5;
+    padding: 20px;
 }
 
 .onboarding form {
@@ -187,25 +197,22 @@ nav .logo-container .logo {
     flex-direction: column;
     padding: 20px;
     width: 35%;
-    text-align: start;
+    text-align: left;
 }
 
 .onboarding form input {
     padding: 15px 30px;
     margin: 10px 0;
     font-size: 15px;
-    border: solid 2px rgb(219, 219, 219);
+    border: 2px solid #dbdbdb;
     border-radius: 10px;
 }
-
-
 
 .onboarding form input::-webkit-inner-spin-button,
 .onboarding form input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
 
 .onboarding form label {
     margin: 10px 0;
@@ -216,15 +223,13 @@ nav .logo-container .logo {
     flex-direction: row;
 }
 
-
 .onboarding form .multiple-input-container input {
     margin-right: 10px;
 }
 
-
 .onboarding form .multiple-input-container label {
     padding: 10px;
-    border: solid 2px rgb(144, 144, 144);
+    border: 2px solid #909090;
     border-radius: 10px;
     transition: all 0.3s;
     margin: 10px;
@@ -239,11 +244,27 @@ nav .logo-container .logo {
 }
 
 .onboarding form input[type="radio"]:checked+label {
-    border: solid 2px rgb(221, 39, 22);
+    border: 2px solid #dd2716;
+}
+
+.onboarding form input[type="submit"] {
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.onboarding form input[type="submit"]:hover {
+    background-color: #006699;
 }
 
 .onboarding form input[type="submit"]:active {
-    background-color: rgb(226, 115, 155);
+    background-color: #e2739b;
 }
 
 .onboarding form .photo-container img {
@@ -287,7 +308,7 @@ nav .logo-container .logo {
     margin-top: 0;
 }
 
-.dashboard .swipe-info{
+.dashboard .swipe-info {
     position: absolute;
     bottom: 0;
     padding: 10px;
@@ -297,16 +318,16 @@ nav .logo-container .logo {
 
 /*------ChatContainer------*/
 
-.chat-container{
-    background-color: rgb(255,255,255);
+.chat-container {
+    background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     width: 30%;
     text-align: left;
     z-index: 1;
 }
 
-.chat-container .chat-container-header{
+.chat-container .chat-container-header {
     background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
     height: 100px;
     display: flex;
@@ -314,29 +335,28 @@ nav .logo-container .logo {
     align-items: center;
 }
 
-.chat-container .option{
+.chat-container .option {
     border: none;
     background-color: rgb(255, 255, 255);
-    border-bottom: solid 4px rgb(243,33,33);
+    border-bottom: solid 4px rgb(243, 33, 33);
     font-size: 20px;
     margin: 2px;
     padding: 10px;
 }
 
-.chat-container .option:disabled{
-    border-bottom: solid 4px rgb(187,187,187);
+.chat-container .option:disabled {
+    border-bottom: solid 4px rgb(187, 187, 187);
 }
 
 .chat-container .profile,
-.chat-container .log-out-icon 
-{
+.chat-container .log-out-icon {
     display: flex;
     align-items: center;
     padding: 20px;
     color: rgb(255, 255, 255);
 }
 
-.img-container{
+.img-container {
     height: 30px;
     width: 30px;
     border-radius: 15px;
@@ -344,21 +364,20 @@ nav .logo-container .logo {
     margin: 10px;
 }
 
-.img-container img{
+.img-container img {
     width: 100%;
 }
 
 /*------ chat Diasplay -----*/
 
 .chat-display,
-.matches-display
-{
+.matches-display {
     padding: 20px;
     height: 50vh;
     overflow-y: auto;
 }
 
-.chat-input{
+.chat-input {
     padding: 20px;
     display: flex;
     flex-direction: column;

@@ -121,9 +121,9 @@ app.put('/addmatch', async (req, res) => {
         }
 
         const user = await users.updateOne(query, updateDocument)
-        return res.send(user)
+        res.send(user)
     }catch(error){
-        console.log(error)
+        console.log(error)  
     } 
     finally {
         await client.close()

@@ -36,7 +36,6 @@ const Dashboard = () => {
 
   useEffect(() => {
     getUser()
-    getGenderedUsers()
   }, [])
 
   useEffect(() => {
@@ -58,7 +57,6 @@ const Dashboard = () => {
   }
 
   const swiped = (direction, swipedUserId) => {
-    
     if(direction === 'right'){
       updateMaches(swipedUserId)
     }
@@ -74,8 +72,8 @@ const Dashboard = () => {
     genderedUser => !matchedUserIds.includes(genderedUser.user_id)
   )
 
-  console.log(filterdGenderedUsers)
-  //console.log(matchedUserIds)
+  console.log('filteredGenderedUsers ', filterdGenderedUsers)
+  console.log('matcheduserIds ',  matchedUserIds)
 
   return (
     <>
@@ -86,11 +84,13 @@ const Dashboard = () => {
             <div className="card-container">
               {filterdGenderedUsers?.map((genderedUser) =>
                 <TinderCard
-                  className='swipe'
+                  className="swipe"
                   key={genderedUser.user_id}
                   onSwipe={(dir) => swiped(dir, genderedUser.user_id)}
                   onCardLeftScreen={() => outOfFrame(genderedUser.first_name)}>
-                  <div style={{ backgroundImage: 'url(' + genderedUser.url + ')' }} className='card'>
+                  <div 
+                    style={{ backgroundImage: "url(" + genderedUser.url + ")" }} 
+                    className="card">
                     <h3>{genderedUser.first_name}</h3>
                   </div>
                 </TinderCard>
@@ -99,8 +99,6 @@ const Dashboard = () => {
               <div className="swipe-info">
                 {lastDirection ? <p>You swiped {lastDirection}</p> : <p />}
               </div>
-
-              
             </div>
           </div>
         </div>
